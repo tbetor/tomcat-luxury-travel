@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TomCat Luxury Travel | Extraordinary Adventures, Expertly Curated</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%2300539B'/><path d='M5 14 C9 8 13 20 16 14 C19 8 23 20 27 14' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'/><path d='M5 19 C9 13 13 25 16 19 C19 13 23 25 27 19' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23FDFAF5'/><circle cx='16' cy='16' r='15' fill='none' stroke='%2300539B' stroke-width='1'/><circle cx='16' cy='11' r='6' fill='%2300539B'/><ellipse cx='16' cy='22' rx='8' ry='6' fill='%2300539B'/><polygon points='11,7 9,1 14,8' fill='%2300539B'/><polygon points='21,7 23,1 18,8' fill='%2300539B'/><path d='M23 21 Q28 16 26 10' fill='none' stroke='%2300539B' stroke-width='2' stroke-linecap='round'/><path d='M8 26 Q11 23 14 26 Q17 29 20 26 Q23 23 25 25' fill='none' stroke='%2300539B' stroke-width='1.2' stroke-linecap='round' opacity='0.6'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
     --green: #00539B;
     --green-light: #1A6BB5;
     --green-dark: #003A6E;
-    --sand: #F5EFE0;
-    --sand-dark: #E8DEC8;
+    --sand: #FDFAF5;
+    --sand-dark: #F0EDE6;
     --cream: #FDFAF5;
     --ink: #1C2B2A;
     --stone: #6B7C7A;
@@ -386,19 +386,16 @@
     overflow: hidden;
     cursor: pointer;
   }
-  .exp-card:first-child { grid-row: span 2; }
 
   .exp-img {
     width: 100%;
     height: 100%;
-    min-height: 280px;
+    min-height: 420px;
     object-fit: cover;
     display: block;
     filter: brightness(0.7);
     transition: transform 0.6s ease, filter 0.4s;
   }
-  .exp-card:first-child .exp-img { min-height: 580px; }
-
   .exp-card:hover .exp-img {
     transform: scale(1.04);
     filter: brightness(0.55);
@@ -430,8 +427,6 @@
     color: var(--white);
     line-height: 1.2;
   }
-  .exp-card:first-child .exp-name { font-size: 2.2rem; }
-
   .exp-desc {
     font-size: 0.7rem;
     line-height: 1.8;
@@ -890,15 +885,14 @@
   <div class="strip-item"><div class="strip-dot"></div>Ski Escapes</div>
   <div class="strip-item"><div class="strip-dot"></div>SCUBA Adventures</div>
   <div class="strip-item"><div class="strip-dot"></div>Safaris</div>
-  <div class="strip-item"><div class="strip-dot"></div>Bespoke Itineraries</div>
 </div>
 
 <!-- ABOUT -->
 <section id="about">
   <div class="about-img-wrap reveal">
     <img class="about-img"
-      src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80"
-      alt="Luxury travel consultant" loading="lazy">
+      src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Grand%20Canyon.jpeg"
+      alt="Grand Canyon" loading="lazy" style="object-position: 25% center;">
     <div class="about-badge">
       <span class="about-badge-num">100%</span>
       <span class="about-badge-label">Independent &<br>Unbiased</span>
@@ -965,7 +959,7 @@
     <!-- Ski -->
     <div class="exp-card reveal" style="animation-delay:0.1s">
       <img class="exp-img"
-        src="https://images.unsplash.com/photo-1530049478161-0780526964f4?w=700&q=80"
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Ski.jpg"
         alt="Luxury ski resort" loading="lazy">
       <div class="exp-overlay">
         <span class="exp-tag">Mountain Escapes</span>
@@ -977,11 +971,11 @@
     <!-- SCUBA -->
     <div class="exp-card reveal" style="animation-delay:0.15s">
       <img class="exp-img"
-        src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=700&q=80"
-        alt="SCUBA diving" loading="lazy">
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Scuba.jpg"
+        alt="SCUBA diving coral reef" loading="lazy">
       <div class="exp-overlay">
         <span class="exp-tag">Underwater Worlds</span>
-        <h3 class="exp-name">Luxury SCUBA</h3>
+        <h3 class="exp-name">SCUBA Adventures</h3>
         <p class="exp-desc">Liveaboard dive yachts in the Maldives, Raja Ampat, the Red Sea, and Palau.</p>
       </div>
     </div>
@@ -989,26 +983,15 @@
     <!-- Safari -->
     <div class="exp-card reveal" style="animation-delay:0.2s">
       <img class="exp-img"
-        src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&q=80"
-        alt="Tented safari" loading="lazy">
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/serengeti.jpeg"
+        alt="Safari" loading="lazy">
       <div class="exp-overlay">
         <span class="exp-tag">African Wilderness</span>
-        <h3 class="exp-name">Tented Safari</h3>
+        <h3 class="exp-name">Safari</h3>
         <p class="exp-desc">Handpicked camps across Kenya, Tanzania, Botswana and Zimbabwe.</p>
       </div>
     </div>
 
-    <!-- River Cruising -->
-    <div class="exp-card reveal" style="animation-delay:0.25s">
-      <img class="exp-img"
-        src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=700&q=80"
-        alt="River cruise through scenic landscape" loading="lazy">
-      <div class="exp-overlay">
-        <span class="exp-tag">Inland Waterways</span>
-        <h3 class="exp-name">River Cruising</h3>
-        <p class="exp-desc">Explore Europe's grand rivers, the Amazon, and the Mekong aboard intimate luxury river vessels.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1033,7 +1016,7 @@
 
     <div class="dest-card reveal" style="animation-delay:0.1s">
       <img class="dest-img"
-        src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=600&q=80"
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/serengeti.jpeg"
         alt="Serengeti Safari" loading="lazy">
       <div class="dest-info">
         <p class="dest-region">East Africa</p>
@@ -1044,22 +1027,22 @@
 
     <div class="dest-card reveal" style="animation-delay:0.15s">
       <img class="dest-img"
-        src="https://images.unsplash.com/photo-1501426026826-31c667bdf23d?w=600&q=80"
-        alt="Patagonia" loading="lazy">
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Inca%20Trail.jpeg"
+        alt="Machu Picchu" loading="lazy">
       <div class="dest-info">
         <p class="dest-region">South America</p>
-        <h3 class="dest-name">Patagonia</h3>
+        <h3 class="dest-name">Machu Picchu</h3>
         <a href="#contact" class="dest-link">Plan This Trip</a>
       </div>
     </div>
 
     <div class="dest-card reveal">
       <img class="dest-img"
-        src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80"
-        alt="Norway Fjords" loading="lazy">
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Norway.jpeg"
+        alt="Norway" loading="lazy">
       <div class="dest-info">
         <p class="dest-region">Northern Europe</p>
-        <h3 class="dest-name">Norway Fjords</h3>
+        <h3 class="dest-name">Norway</h3>
         <a href="#contact" class="dest-link">Plan This Trip</a>
       </div>
     </div>
@@ -1070,14 +1053,14 @@
         alt="Raja Ampat Indonesia" loading="lazy">
       <div class="dest-info">
         <p class="dest-region">Southeast Asia</p>
-        <h3 class="dest-name">Raja Ampat</h3>
+        <h3 class="dest-name">Vietnam</h3>
         <a href="#contact" class="dest-link">Plan This Trip</a>
       </div>
     </div>
 
     <div class="dest-card reveal" style="animation-delay:0.15s">
       <img class="dest-img"
-        src="https://images.unsplash.com/photo-1516537219851-920e2670c6e3?w=600&q=80"
+        src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/Antartica.jpeg"
         alt="Antarctica Expedition" loading="lazy">
       <div class="dest-info">
         <p class="dest-region">The Last Frontier</p>
@@ -1216,7 +1199,6 @@
         <li><a href="#experiences">Ski &amp; Snow</a></li>
         <li><a href="#experiences">SCUBA Adventures</a></li>
         <li><a href="#experiences">Safaris</a></li>
-        <li><a href="#experiences">River Cruising</a></li>
       </ul>
     </div>
 
