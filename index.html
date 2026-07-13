@@ -57,6 +57,11 @@
     flex-direction: column;
     line-height: 1;
   }
+  .logo-img {
+    height: 54px;
+    width: auto;
+    display: block;
+  }
   .logo-main {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
@@ -80,12 +85,12 @@
     list-style: none;
   }
   .nav-links a {
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--ink);
     text-decoration: none;
-    opacity: 0.6;
+    opacity: 0.85;
     transition: opacity 0.2s, color 0.2s;
   }
   .nav-links a:hover { opacity: 1; color: var(--green); }
@@ -94,9 +99,9 @@
     font-size: 0.6rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--green);
+    color: var(--ink);
     text-decoration: none;
-    border: 1px solid var(--green);
+    border: 1px solid var(--ink);
     padding: 0.55rem 1.4rem;
     transition: background 0.2s, color 0.2s;
   }
@@ -842,10 +847,9 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">
-    <span class="logo-main">TomCat Luxury Travel</span>
-    <span class="logo-sub">Extraordinary Adventures, Expertly Curated</span>
-  </div>
+  <a href="#hero" class="logo">
+    <img class="logo-img" src="https://raw.githubusercontent.com/tbetor/tomcat-luxury-travel/main/TomCat_LuxuryTravel_Logo_transparent.png" alt="TomCat Luxury Travel">
+  </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experiences">Experiences</a></li>
